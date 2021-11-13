@@ -14,8 +14,6 @@ int main ()
 	printf ("2 -> comparison\n");
 	scanf("%d",&menu);
 	
-	
-	
 	if (menu==1)
 {
 	printf("entrer le premier chifre : \n");
@@ -44,24 +42,19 @@ int main ()
 			break;
 			default :
 			printf("operateur inconnu !! \n");
-		
-		
 	}
+		}
 	
-	
-	
-	
-	}
-	
-	else if(menu == 2) {
-			printf("entrer le premier chifre pour comparer : \n");
-				scanf("%f",&num1);
-				getc(stdin);
-				printf ("choisi ton operateur de comparaison : \n");
-				scanf("%c",&choix);
-				printf("entrer le deuxieme chifre pour comparer : \n");
-				scanf("%f",&num2);
-				switch(choix)
+	else if(menu == 2) 
+				{
+					printf("entrer le premier chifre pour comparer : \n");
+					scanf("%f",&num1);
+					getc(stdin);
+					printf ("choisi ton operateur de comparaison : \n");
+					scanf("%c",&choix);
+					printf("entrer le deuxieme chifre pour comparer : \n");
+					scanf("%f",&num2);
+					switch(choix)
 				{
 					case '>':
 					printf("%.2f > %.2f = %d",num1,num2,num3);
